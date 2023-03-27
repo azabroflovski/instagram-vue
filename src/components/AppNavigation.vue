@@ -1,14 +1,3 @@
-<template>
-  <div class="app-navigation">
-    <ul class="app-navigation-list">
-      <li class="app-navigation-list__item" v-for="item in navigation" :key="item.label">
-        <v-icon :name="item.icon" scale="1.5" />
-        <span>{{ item.label }}</span>
-      </li>
-    </ul>
-  </div>
-</template>
-
 <script lang="ts" setup>
 const navigation = [
   {
@@ -41,3 +30,14 @@ const navigation = [
   },
 ]
 </script>
+
+<template>
+  <div class="app-navigation">
+    <ul class="app-navigation-list">
+      <li v-for="item in navigation" :key="item.label" class="app-navigation-list__item">
+        <v-icon :name="item.icon" scale="1.5" />
+        <span>{{ item.label }}</span>
+      </li>
+    </ul>
+  </div>
+</template>
