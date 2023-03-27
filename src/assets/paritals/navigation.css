@@ -1,0 +1,33 @@
+.app-navigation {
+    border-right: 1px solid rgb(219, 219, 219);
+    width: 260px;
+    padding: 20px;
+}
+
+.app-navigation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app-navigation-list__item {
+    padding: 10px 20px;
+    border-radius: 24px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.app-navigation-list__item:hover {
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+.app-navigation-list__item.active {
+    background-color: #f5f5f5;
+}
+
+.app-navigation-list__item span {
+    font-size: 16px;
+    padding-left: 20px;
+}

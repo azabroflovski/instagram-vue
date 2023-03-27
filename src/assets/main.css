@@ -1,1 +1,13 @@
 @import './base.css';
+@import './paritals/navigation.css';
+
+.app-layout {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.app-layout-content {
+    width: 100%;
+    padding: 20px;
+}
